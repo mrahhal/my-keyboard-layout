@@ -14,9 +14,13 @@ I use "layout" and "keymap" interchangeably in this document. Oryx calls them la
 
 Source: [keymaps/main](keymaps/main)
 
-This is my main layout. I designed this layout for programming, for writing in the several languages I interact with to varying degrees (EN/JP/AR/DE), and also supports gaming.
+This is my main layout. I designed it for programming and writing in the several languages I interact with to varying degrees (EN/JP/AR/DE), and it also supports gaming.
+
+The base layer is a standard QWERTY English layer. I wanted it to be as close as possible to a standard keyboard if I can help it, which is why this doesn't use home row mods or anything fancy. This works better for me.
 
 ![Main Base Layer](images/main_base_layer.png)
+
+Other layers include lang layers (Japanese, Arabic, German) which are toggled through a combo (TO), and are exited by holding ESC to go back to base layer. A few layers are also momentary layers (MO) and are for everything else (symbols, numbers, nav, mouse, board, etc).
 
 ## Setup
 
