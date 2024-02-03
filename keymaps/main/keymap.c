@@ -28,7 +28,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TAB,         KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,                                           KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,           KC_MINUS,       
     KC_LEFT_SHIFT,  KC_A,           KC_S,           KC_D,           KC_F,           KC_G,                                           KC_H,           KC_J,           KC_K,           KC_L,           KC_SCLN,        MEH_T(KC_QUOTE),
     KC_LEFT_CTRL,   KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,                                           KC_N,           KC_M,           KC_COMMA,       KC_DOT,         ALL_T(KC_SLASH),KC_LEFT_GUI,    
-                                                    MT(MOD_LALT, KC_BSPC),LT(5,KC_SPACE),                                 LT(6,KC_ENTER), LT(7,KC_DELETE)
+                                                    KC_LEFT_ALT,    LT(5,KC_SPACE),                                 LT(6,KC_ENTER), LT(7,KC_BSPC)
   ),
   [1] = LAYOUT_voyager(
     TD(DANCE_0),    JP_ZHTG,        JP_KANA,        JP_MKANA,       KC_NO,          KC_NO,                                          KC_LANGUAGE_1,  KC_LANGUAGE_2,  KC_NO,          KC_NO,          KC_NO,          KC_NO,          
@@ -92,7 +92,7 @@ const uint16_t PROGMEM combo0[] = { LT(5,KC_SPACE), LT(6,KC_ENTER), KC_D, COMBO_
 const uint16_t PROGMEM combo1[] = { LT(5,KC_SPACE), LT(6,KC_ENTER), KC_J, COMBO_END};
 const uint16_t PROGMEM combo2[] = { LT(5,KC_SPACE), LT(6,KC_ENTER), KC_A, COMBO_END};
 const uint16_t PROGMEM combo3[] = { KC_G, LT(5,KC_SPACE), LT(6,KC_ENTER), COMBO_END};
-const uint16_t PROGMEM combo4[] = { LT(7,KC_DELETE), MT(MOD_LALT, KC_BSPC), COMBO_END};
+const uint16_t PROGMEM combo4[] = { LT(7,KC_BSPC), KC_LEFT_ALT, COMBO_END};
 
 combo_t key_combos[COMBO_COUNT] = {
     COMBO(combo0, TO(2)),
