@@ -5,20 +5,20 @@
 
 set -e
 
-# Ensure $HOME/.local/bin is in path.
+# Ensure $HOME/.local/bin is in path. This is where qmk cli lives.
 export PATH="$HOME/.local/bin:$PATH"
 
 km_repo=$(realpath .)
 km_src="${km_repo}/keymaps/main"
 firmware_repo=$(realpath ~/src/github/zsa/qmk_firmware)
-firmware_km="${firmware_repo}/keyboards/voyager/keymaps/mrahhal_main"
+firmware_km_src="${firmware_repo}/keyboards/voyager/keymaps/mrahhal_main"
 
-# Ensure mrahhal_main keymap dir exists under voyager keyboard.
-mkdir -p $firmware_km
+# Ensure keymap dir in firmware exists.
+mkdir -p $firmware_km_src
 
 # Copy the keymap source from this repo to the firmware source.
-printf "Copying from\n'${km_src}'\nto\n'${firmware_km}'\n"
-cp -a $km_src/. $firmware_km
+printf "Copying from\n'${km_src}'\nto\n'${firmware_km_src}'\n"
+cp -a $km_src/. $firmware_km_src
 echo "---"
 
 # Build it.
