@@ -622,3 +622,12 @@ layer_state_t layer_state_set_user(layer_state_t state) {
 
     return state;
 }
+
+// https://docs.qmk.fm/#/feature_key_overrides
+const key_override_t **key_overrides = (const key_override_t *[]){
+    // SHIFT+BSPC -> DEL
+    &ko_make_basic(MOD_MASK_SHIFT, LT(7,KC_BSPC), KC_DEL),
+
+    // Null terminator is required at the end.
+    NULL
+};
