@@ -93,3 +93,4 @@ I'll try to keep this updated with my changes differing from Oryx layout.
 - Custom LED indicator lights depending on the active layers. This is because I have a number of language layers I rarely switch to, but these need to be low so that they can still access MO layers. This setup made the LED indicators useless for the most part. This change implements a custom lighting behavior for these LEDs to be more useful.
 - Key overrides:
   - SHIFT+BSPC -> DEL
+  - SHIFT+Numpad keys -> Fn keys (avoids the need for an even additional layer just for the fn keys to take the place of number keys)
