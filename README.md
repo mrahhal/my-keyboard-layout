@@ -20,7 +20,7 @@ The base layer is a standard QWERTY English layer. I wanted it to be as close as
 
 ![Main Base Layer](images/main_base_layer.png)
 
-Other layers include lang layers (Japanese, Arabic, German) which are toggled through a combo (TO), and are exited by holding ESC to go back to base layer. A few layers are also momentary layers (MO) and are for everything else (symbols, numbers, nav, mouse, board, etc).
+A few layers are language layers with mostly minimal but useful changes (Japanese, Arabic, German) which are toggled through a combo (TO), and are exited by holding ESC to go back to base. A few other layers are momentary layers (MO) and are for everything else (symbols, numbers, board, sys, nav, mouse, etc).
 
 ## Setup
 
