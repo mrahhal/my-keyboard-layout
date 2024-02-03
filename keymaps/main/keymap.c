@@ -59,11 +59,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                     KC_BSPC,        KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT
   ),
   [5] = LAYOUT_voyager(
-    KC_CIRC,        KC_F1,          KC_F2,          KC_F3,          KC_F4,          KC_F5,                                          KC_F6,          KC_F7,          KC_F8,          KC_F9,          KC_F10,         KC_F11,         
-    KC_GRAVE,       KC_EXLM,        KC_AT,          KC_HASH,        KC_LPRN,        KC_RPRN,                                        KC_7,           KC_8,           KC_9,           KC_MINUS,       KC_SLASH,       KC_F12,         
-    KC_TRANSPARENT, KC_EQUAL,       KC_AMPR,        KC_ASTR,        KC_LCBR,        KC_RCBR,                                        KC_4,           KC_5,           KC_6,           KC_PLUS,        KC_ASTR,        KC_TRANSPARENT, 
-    KC_TRANSPARENT, KC_TILD,        KC_DLR,         KC_PERC,        KC_LBRC,        KC_RBRC,                                        KC_1,           KC_2,           KC_3,           KC_DOT,         ALL_T(KC_EQUAL),KC_TRANSPARENT, 
-                                                    KC_NO,          KC_TRANSPARENT,                                 KC_NO,          KC_0
+    KC_CIRC,        KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                                          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          
+    KC_GRAVE,       KC_EXLM,        KC_AT,          KC_HASH,        KC_LPRN,        KC_RPRN,                                        KC_KP_7,        KC_KP_8,        KC_KP_9,        KC_KP_MINUS,    KC_KP_SLASH,    KC_NO,          
+    KC_TRANSPARENT, KC_EQUAL,       KC_AMPR,        KC_ASTR,        KC_LCBR,        KC_RCBR,                                        KC_KP_4,        KC_KP_5,        KC_KP_6,        KC_KP_PLUS,     KC_KP_ASTERISK, KC_TRANSPARENT, 
+    KC_TRANSPARENT, KC_TILD,        KC_DLR,         KC_PERC,        KC_LBRC,        KC_RBRC,                                        KC_KP_1,        KC_KP_2,        KC_KP_3,        KC_KP_DOT,      ALL_T(KC_KP_EQUAL),KC_TRANSPARENT, 
+                                                    KC_NO,          KC_TRANSPARENT,                                 KC_NO,          KC_KP_0
   ),
   [6] = LAYOUT_voyager(
     TOGGLE_LAYER_COLOR,RGB_TOG,        RGB_VAD,        RGB_VAI,        KC_NO,          KC_NO,                                          RGB_SLD,        RGB_MODE_FORWARD,RGB_SPD,        RGB_SPI,        KC_NO,          KC_NO,          
