@@ -556,3 +556,19 @@ tap_dance_action_t tap_dance_actions[] = {
         [DANCE_7] = ACTION_TAP_DANCE_FN_ADVANCED(on_dance_7, dance_7_finished, dance_7_reset),
         [DANCE_8] = ACTION_TAP_DANCE_FN_ADVANCED(on_dance_8, dance_8_finished, dance_8_reset),
 };
+
+// ---
+
+// https://docs.qmk.fm/#/tap_hold?id=hold-on-other-key-press
+bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        // Apply "Hold On Other Key Press" for these keys.
+        case MT(MOD_LALT, KC_BSPC):
+        case LT(6,KC_ENTER):
+        case LT(7,KC_DELETE):
+            return true;
+
+        default:
+            return false;
+    }
+}
