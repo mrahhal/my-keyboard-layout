@@ -572,3 +572,53 @@ bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
             return false;
     }
 }
+
+// https://docs.qmk.fm/#/feature_layers?id=layer-change-code
+// Implemented using voyager specific LED functions. Hard coded LED indicators depending
+// on the layer numbers in my main layout.
+layer_state_t layer_state_set_user(layer_state_t state) {
+    bool LED_1 = false;
+    bool LED_2 = false;
+    bool LED_3 = false;
+    bool LED_4 = false;
+
+    uint8_t layer = get_highest_layer(state);
+    switch (layer) {
+        // Base layer
+        case 0:
+            break;
+
+        // Language layers
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+            LED_1 = true;
+            LED_3 = true;
+            break;
+
+        // MO layers accessed from the left side
+        case 5:
+            LED_1 = true;
+            break;
+
+        // MO layers accessed from the right side
+        case 6:
+        case 7:
+            LED_3 = true;
+            break;
+
+        // Any other layer
+        default:
+            LED_2 = true;
+            LED_4 = true;
+            break;
+    }
+
+    STATUS_LED_1(LED_1);
+    STATUS_LED_2(LED_2);
+    STATUS_LED_3(LED_3);
+    STATUS_LED_4(LED_4);
+
+    return state;
+}
