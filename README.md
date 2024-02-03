@@ -87,9 +87,8 @@ I'll try to keep this updated with my changes differing from Oryx layout.
 
 - Apply [Hold On Other Key Press](https://docs.qmk.fm/#/tap_hold?id=hold-on-other-key-press) per key for:
   - base layer:
-    - Backspace/LALT
     - Enter/LT(6)
-    - Del/LT(7)
+    - Backspace/LT(7)
 - Custom LED indicator lights depending on the active layers. This is because I have a number of language layers I rarely switch to, but these need to be low so that they can still access MO layers. This setup made the LED indicators useless for the most part. This change implements a custom lighting behavior for these LEDs to be more useful.
 - Key overrides:
   - SHIFT+BSPC -> DEL

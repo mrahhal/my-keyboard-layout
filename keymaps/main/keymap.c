@@ -563,9 +563,8 @@ tap_dance_action_t tap_dance_actions[] = {
 bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         // Apply "Hold On Other Key Press" for these keys.
-        case MT(MOD_LALT, KC_BSPC):
         case LT(6,KC_ENTER):
-        case LT(7,KC_DELETE):
+        case LT(7,KC_BSPC):
             return true;
 
         default:
