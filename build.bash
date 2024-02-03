@@ -25,7 +25,7 @@ echo "---"
 make -C $firmware_repo voyager:mrahhal_main
 
 # Copy the built bins back to this repo.
-cp $firmware_repo/*.bin $km_repo
+cp -a $firmware_repo/*.bin $km_repo
 
 GREEN='\e[1;32m'
 NC='\e[0m'
