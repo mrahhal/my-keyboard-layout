@@ -63,21 +63,21 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TRANSPARENT, KC_EXLM,        KC_AT,          KC_HASH,        KC_LPRN,        KC_RPRN,                                        KC_KP_SLASH,    KC_KP_7,        KC_KP_8,        KC_KP_9,        KC_KP_MINUS,    KC_NO,          
     KC_TRANSPARENT, KC_EQUAL,       KC_AMPR,        KC_ASTR,        KC_LCBR,        KC_RCBR,                                        KC_KP_ASTERISK, KC_KP_4,        KC_KP_5,        KC_KP_6,        KC_KP_PLUS,     MEH_T(KC_GRAVE),
     KC_TRANSPARENT, KC_CIRC,        KC_DLR,         KC_PERC,        KC_LBRC,        KC_RBRC,                                        KC_KP_EQUAL,    KC_KP_1,        KC_KP_2,        KC_KP_3,        ALL_T(KC_KP_DOT),KC_TRANSPARENT, 
-                                                    KC_NO,          KC_TRANSPARENT,                                 KC_NO,          KC_KP_0
+                                                    KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_NO,          KC_KP_0
   ),
   [6] = LAYOUT_voyager(
     TOGGLE_LAYER_COLOR,RGB_TOG,        RGB_VAD,        RGB_VAI,        KC_NO,          KC_NO,                                          RGB_SLD,        RGB_MODE_FORWARD,RGB_SPD,        RGB_SPI,        KC_NO,          KC_NO,          
     KC_TRANSPARENT, KC_NO,          KC_AUDIO_VOL_DOWN,KC_AUDIO_MUTE,  KC_AUDIO_VOL_UP,KC_NO,                                          KC_MS_WH_UP,    KC_HOME,        KC_UP,          KC_END,         KC_PAGE_UP,     KC_NO,          
     KC_TRANSPARENT, KC_NO,          KC_MEDIA_PREV_TRACK,KC_MEDIA_PLAY_PAUSE,KC_MEDIA_NEXT_TRACK,KC_NO,                                          KC_MS_WH_DOWN,  KC_LEFT,        KC_DOWN,        KC_RIGHT,       KC_PGDN,        KC_NO,          
     KC_TRANSPARENT, KC_NO,          KC_NO,          KC_MEDIA_STOP,  KC_NO,          KC_NO,                                          KC_LABK,        LCTL(LSFT(KC_TAB)),KC_APPLICATION, LCTL(KC_TAB),   KC_RABK,        KC_TRANSPARENT, 
-                                                    KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT
+                                                    KC_TRANSPARENT, KC_SPACE,                                       KC_TRANSPARENT, KC_BSPC
   ),
   [7] = LAYOUT_voyager(
     KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                                          KC_NO,          KC_NO,          KC_MS_BTN3,     KC_NO,          KC_NO,          KC_NO,          
     KC_TRANSPARENT, KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                                          KC_MS_WH_UP,    KC_MS_BTN1,     KC_MS_UP,       KC_MS_BTN2,     KC_PAGE_UP,     KC_NO,          
     KC_TRANSPARENT, KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                                          KC_MS_WH_DOWN,  KC_MS_LEFT,     KC_MS_DOWN,     KC_MS_RIGHT,    KC_PGDN,        KC_NO,          
     KC_TRANSPARENT, KC_MS_ACCEL0,   KC_MS_ACCEL1,   KC_MS_ACCEL2,   KC_NO,          KC_NO,                                          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          
-                                                    KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT
+                                                    KC_TRANSPARENT, KC_SPACE,                                       KC_ENTER,       KC_TRANSPARENT
   ),
   [8] = LAYOUT_voyager(
     TD(DANCE_8),    ST_MACRO_0,     KC_NO,          KC_NO,          KC_NO,          KC_NO,                                          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NUM,         
