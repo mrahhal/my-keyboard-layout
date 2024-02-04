@@ -89,6 +89,7 @@ I'll try to keep this updated with my changes differing from Oryx layout.
   - base layer:
     - Enter/LT(6)
     - Backspace/LT(7)
+    - KC_TAB/GUI
 - Custom LED indicator lights depending on the active layers. This is because I have a number of language layers I rarely switch to, but these need to be low so that they can still access MO layers. This setup made the LED indicators useless for the most part. This change implements a custom lighting behavior for these LEDs to be more useful.
 - Key overrides:
   - SHIFT+BSPC -> DEL

@@ -565,6 +565,7 @@ bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
         // Apply "Hold On Other Key Press" for these keys.
         case LT(6,KC_ENTER):
         case LT(7,KC_BSPC):
+        case MT(MOD_LGUI, KC_TAB):
             return true;
 
         default:
