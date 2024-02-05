@@ -574,16 +574,17 @@ bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
 }
 
 // https://docs.qmk.fm/#/feature_layers?id=layer-change-code
-// Implemented using voyager specific LED functions. Hard coded LED indicators depending
-// on the layer numbers in my main layout.
 layer_state_t layer_state_set_user(layer_state_t state) {
     // Need numlock to always be on, so this ensures that it is whenever we switch layers.
-    // Numpad is on a non base layer so this works fine. Not sure if there's a better place (matrix_init_user is too early to do that).
+    // Numpad is on a non base layer so this works fine.
+    // Not sure if there's a better place (matrix_init_user is too early to do that).
     if (!host_keyboard_led_state().num_lock) {
         tap_code(KC_NUM_LOCK);
     }
 
     // LED indicators
+    // Implemented using voyager specific LED functions. Hard coded LED indicators depending
+    // on the layer numbers in my main layout.
     bool LED_1 = false;
     bool LED_2 = false;
     bool LED_3 = false;
