@@ -86,11 +86,10 @@ Although the qmk cli is also capable of directly flashing a bin, I use ZSA's [Ke
 I'll try to keep this updated with my changes differing from Oryx layout.
 
 - Apply [Hold On Other Key Press](https://docs.qmk.fm/#/tap_hold?id=hold-on-other-key-press) per key for:
-  - base layer:
-    - Enter/LT(6)
-    - Backspace/LT(7)
-    - TAB/GUI
-- Custom LED indicator lights depending on the active layers. This is because I have a number of language layers I rarely switch to, but these need to be low so that they can still access MO layers. This setup made the LED indicators useless for the most part. This change implements a custom lighting behavior for these LEDs to be more useful.
+  - Enter/LT
+  - Backspace/LT
+  - TAB/GUI
+- Custom LED indicator lights depending on the active layers. I have a number of alternative language layers I don't switch to often, but these need to be low so that they can still access MO layers. This setup made the LED indicators useless for the most part. This change implements a custom lighting behavior for these LEDs to be more useful.
 - Key overrides:
   - SHIFT+BSPC -> DEL
   - SHIFT+Numpad keys -> Fn keys (avoids the need for an even additional layer just for the fn keys to take the place of number keys)
