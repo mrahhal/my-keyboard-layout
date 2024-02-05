@@ -582,8 +582,8 @@ tap_dance_action_t tap_dance_actions[] = {
 bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         // Apply "Hold On Other Key Press" for these keys.
-        case LT(6,KC_ENTER):
-        case LT(7,KC_BSPC):
+        case LT(7,KC_ENTER):
+        case LT(9,KC_BSPC):
         case MT(MOD_LGUI, KC_TAB):
             return true;
 
@@ -655,7 +655,7 @@ layer_state_t layer_state_set_user(layer_state_t state) {
 const key_override_t **key_overrides = (const key_override_t *[]){
     // SHIFT+BSPC -> DEL
     &ko_make_basic(MOD_MASK_SHIFT, KC_BSPC, KC_DEL),
-    &ko_make_basic(MOD_MASK_SHIFT, LT(7,KC_BSPC), KC_DEL),
+    &ko_make_basic(MOD_MASK_SHIFT, LT(9,KC_BSPC), KC_DEL),
 
     // SHIFT+Numpad -> Fn keys
     &ko_make_basic(MOD_MASK_SHIFT, KC_KP_1, KC_F1),
