@@ -87,6 +87,9 @@ I'll try to keep this updated with my changes differing from Oryx layout.
 
 - Custom LED indicator lights depending on the active layers. I have a number of alternative language layers I don't switch to often, but these need to be low so that they can still access MO layers. This setup made the LED indicators useless for the most part. This change implements a custom lighting behavior for these LEDs to be more useful.
 - Ensure numlock is turned on on layer switches for numpad to work correctly.
+- Disable auto-repeat for these keys:
+  - LT(5,KC_SPACE)
+  - LT(7,KC_ENTER)
 - Apply [Hold On Other Key Press](https://docs.qmk.fm/#/tap_hold?id=hold-on-other-key-press) per key for:
   - Enter/LT
   - Backspace/LT

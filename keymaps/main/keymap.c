@@ -592,6 +592,19 @@ bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
     }
 }
 
+// https://docs.qmk.fm/#/tap_hold?id=quick-tap-term
+uint16_t get_quick_tap_term(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        // Disable auto-repeat for these keys.
+        case LT(5,KC_SPACE):
+        case LT(7,KC_ENTER):
+            return 0;
+
+        default:
+            return QUICK_TAP_TERM;
+    }
+}
+
 // https://docs.qmk.fm/#/feature_layers?id=layer-change-code
 layer_state_t layer_state_set_user(layer_state_t state) {
     // Need numlock to always be on, so this ensures that it is whenever we switch layers.
