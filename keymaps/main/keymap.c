@@ -626,12 +626,13 @@ layer_state_t layer_state_set_user(layer_state_t state) {
 
         // MO layers accessed from the left side
         case 5:
+        case 6:
             LED_1 = true;
             break;
 
         // MO layers accessed from the right side
-        case 6:
         case 7:
+        case 8:
             LED_3 = true;
             break;
 
