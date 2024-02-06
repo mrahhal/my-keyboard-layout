@@ -93,7 +93,7 @@ I'll try to keep this updated with my changes differing from Oryx layout.
 - Apply [Hold On Other Key Press](https://docs.qmk.fm/#/tap_hold?id=hold-on-other-key-press) per key for:
   - Enter/LT
   - Backspace/LT
-  - TAB/GUI
+  - TAB/LALT
 - Key overrides:
   - SHIFT+BSPC -> DEL
   - SHIFT+Numpad keys -> Fn keys (avoids the need for an even additional layer just for the fn keys to take the place of number keys)
