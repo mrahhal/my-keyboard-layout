@@ -11,7 +11,7 @@ export PATH="$HOME/.local/bin:$PATH"
 km_repo=$(realpath .)
 km_src="${km_repo}/keymaps/main"
 firmware_repo=$(realpath ~/src/github/zsa/qmk_firmware)
-firmware_km_src="${firmware_repo}/keyboards/voyager/keymaps/mrahhal_main"
+firmware_km_src="${firmware_repo}/keyboards/zsa/voyager/keymaps/mrahhal_main"
 
 # Ensure keymap dir in firmware exists.
 mkdir -p $firmware_km_src
