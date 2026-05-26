@@ -33,17 +33,17 @@ First, follow [QMK docs](https://docs.qmk.fm/#/newbs_getting_started) for gettin
 One difference is instead of `qmk setup`, we need to use [ZSA's fork](https://github.com/zsa/qmk_firmware). So first, inside an Ubuntu terminal:
 
 ```bash
-# Clone the ZSA fork and checkout branch firmware23.
+# Clone the ZSA fork and checkout branch firmware25.
 mkdir -p ~/src/github/zsa
 git clone https://github.com/zsa/qmk_firmware ~/src/github/zsa
 cd ~/src/github/zsa/qmk_firmware
-git checkout firmware23
+git checkout firmware25
 ```
 
 Then, setup qmk cli:
 
 ```bash
-qmk setup -H ~/src/github/zsa/qmk_firmware -b firmware23
+qmk setup -H ~/src/github/zsa/qmk_firmware -b firmware25
 ```
 
 Ensure it's installed:
