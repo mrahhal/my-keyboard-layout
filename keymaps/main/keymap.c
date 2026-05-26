@@ -418,7 +418,7 @@ layer_state_t layer_state_set_user(layer_state_t state) {
 }
 
 // https://docs.qmk.fm/#/feature_key_overrides
-const key_override_t **key_overrides = (const key_override_t *[]){
+const key_override_t *key_overrides[] = {
     // SHIFT+BSPC -> DEL
     &ko_make_basic(MOD_MASK_SHIFT, KC_BSPC, KC_DEL),
     &ko_make_basic(MOD_MASK_SHIFT, LT(9,KC_BSPC), KC_DEL),
